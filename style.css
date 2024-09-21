@@ -1,13 +1,19 @@
 body {
   background-color: darkseagreen;
-  /* background-image: url(./src/38701821_1625538974224825_3513516726845177856_o.jpg?width=100%); */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-image: url(./src/79532535_1598879536920716_8257224100011835392_o.jpg);
+  background-size: contain;
+  background-size: 100%;
 }
-
 h1 {
+  font-size: 5rem;
   text-align: center;
-  color: darkgoldenrod;
+  color: gold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-shadow: 15px -25px 5px rgba(255, 0, 0, 0.811);
 }
-
 #basic_tag {
   line-height: 1.5;
   font-size: 15px;
@@ -17,16 +23,13 @@ h1 {
   opacity: 60%;
   /* background-color: blueviolet; */
 }
-
 #opacity:hover {
   color: #6b13ad;
 }
-
 #opacity:active {
   color: chartreuse;
   font-size: 20px;
 }
-
 #opacity span {
   opacity: 14%;
   /* background-color: blue; */
@@ -36,16 +39,13 @@ h1 {
   visibility: hidden;
   background-color: blue;
 }
-
 #visibility:hover {
   color: blue;
 }
-
 #visibility:active {
   color: mediumvioletred;
   font-size: 20px;
 }
-
 #visibility span {
   visibility: visible;
   background-color: coral;
@@ -60,13 +60,57 @@ h1 {
   font-size: 20px;
   line-height: 1.5;
   font-family: fantasy;
+  font-weight: 100;
+  text-align: justify;
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  width: 70%;
+  height: 400px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+#h2_2 {
+  width: 50%;
+  margin: auto;
+}
+#table {
+  background-color: aqua;
+  color: blue;
+  padding: 20px;
+  /* border: 10px solid red; */
+  border-width: 10px 20px 30px 40px;
+  border-style: outset dotted double ridge;
+  border-color: #6b13ad red goldenrod gainsboro;
+  border-radius: 10px 20px 30px 40px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#testBox-sizing div {
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: #6b13ad;
+  border: 10px solid red;
+  display: inline-block;
+}
+#box1 {
+  margin-right: 30px;
+}
+#box2 {
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: right;
 }
 
 #author {
   margin-top: 20px;
   line-height: 1.3;
 }
-
 .avt {
   width: 120px;
   height: 120px;
@@ -74,16 +118,18 @@ h1 {
   border: 1 solid #6b13ad;
   margin-top: 5px;
 }
-
 .avt:not(#av1) {
   margin-left: -40px;
 }
-
 #avata {
+  width: 70%;
+  border: 10px solid ghostwhite;
   background-color: burlywood;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  outline-offset: 20px;
+  outline: 10px solid royalblue;
 }
-
 #av1:hover {
   color: tomato;
 }
@@ -91,7 +137,6 @@ h1 {
 #Git_Video {
   line-height: 30px;
 }
-
 #git_command {
   font-size: 20px;
 }
@@ -99,11 +144,28 @@ h1 {
 .link:hover {
   color: yellow;
 }
-
 .link:active {
   color: red;
 }
-
 .link:visited {
   color: #6b13ad;
+}
+/* (Test Margin collapse)
+.test1 {
+  background-color: #6b13ad;
+  width: 200px;
+  height: 150px;
+  margin-top: 170px;
+}
+#test2 {
+  background-color: gray;
+  border: 10px solid red;
+  margin-top: 50px;
+} */
+#git_command li {
+  list-style-type: circle;
+}
+
+footer {
+  text-align: center;
 }
