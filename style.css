@@ -2,9 +2,16 @@ body {
   background-color: darkseagreen;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-image: url(./src/79532535_1598879536920716_8257224100011835392_o.jpg);
-  background-size: contain;
-  background-size: 100%;
+  background-image: linear-gradient(
+    to left,
+    #4fb576 0%,
+    #44c489 15%,
+    #28a9ae 40%,
+    #28a2b7 50%,
+    #4c7788 65%,
+    #6c4f63 80%,
+    #432c39 99%
+  );
 }
 h1 {
   font-size: 5rem;
@@ -12,11 +19,18 @@ h1 {
   color: gold;
   text-decoration: underline;
   text-transform: uppercase;
-  text-shadow: 15px -25px 5px rgba(255, 0, 0, 0.811);
+  text-shadow: 15px -25px 10px rgb(128, 0, 0);
 }
 #basic_tag {
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 1rem;
+}
+h2 {
+  color: transparent;
+  background-color: aqua;
+  background-clip: text;
+  /* -webkit-background-clip: text; */
+  background-image: linear-gradient(to right, aqua, goldenrod 30%);
 }
 
 #opacity {
@@ -28,11 +42,10 @@ h1 {
 }
 #opacity:active {
   color: chartreuse;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 #opacity span {
   opacity: 14%;
-  /* background-color: blue; */
 }
 
 #visibility {
@@ -44,7 +57,7 @@ h1 {
 }
 #visibility:active {
   color: mediumvioletred;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 #visibility span {
   visibility: visible;
@@ -57,28 +70,28 @@ h1 {
 }
 
 #font {
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 1.5;
   font-family: fantasy;
   font-weight: 100;
   text-align: justify;
   letter-spacing: 2px;
   word-spacing: 20px;
-  width: 70%;
-  height: 400px;
+  width: 60%;
+  height: 30rem;
   overflow: auto;
   overscroll-behavior: contain;
 }
 
 #h2_2 {
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 #table {
   background-color: aqua;
   color: blue;
   padding: 20px;
-  /* border: 10px solid red; */
+  border: 10px solid red;
   border-width: 10px 20px 30px 40px;
   border-style: outset dotted double ridge;
   border-color: #6b13ad red goldenrod gainsboro;
@@ -88,57 +101,107 @@ h1 {
 }
 
 #testBox-sizing div {
-  width: 200px;
-  height: 200px;
-  font-size: 20px;
+  width: 30vw;
+  height: 30vw;
+  font-size: 1.5rem;
   color: aliceblue;
   background-color: #6b13ad;
-  border: 10px solid red;
   display: inline-block;
 }
 #box1 {
-  margin-right: 30px;
+  border: 0.5rem solid red;
 }
 #box2 {
   box-sizing: border-box;
+  border: 0.5rem dotted blue;
+  box-shadow: 70px 30px 15px 20px darkslategray;
 }
 
 h3 {
   text-align: right;
 }
 
+#test_background {
+  height: 70vh;
+  border: 2rem dotted goldenrod;
+  padding: 2rem;
+
+  background-color: bisque;
+  background-image: url(./src/79532535_1598879536920716_8257224100011835392_o.jpg);
+
+  /*background-size:100%; /*size ảnh nền*/
+  /* background-size: cover; */
+
+  background-position: top left; /*xác định điểm bắt đầu của ảnh nền*/
+  /* background-position: center; */
+  /* background-position: 0% 0%; */
+
+  background-repeat: no-repeat;
+
+  background-origin: content-box; /*xác định vùng bắt đầu của ảnh nền(default = padding-box)*/
+  /* background-origin: border-box; */
+
+  background-clip: padding-box; /*giới hạn phạm vi của nền(default = border-box)*/
+
+  /* background-attachment: fixed; */
+
+  /*background: color image position / size repeat origin clip attachment*/
+
+  clip-path: circle(60% at 40% 50%);
+  clip-path: inset(20px round 20px 40px 60px 80px);
+  clip-path: polygon(10% 10%, 50% 5%, 70% 20%, 90% 90%, 60% 70%, 5% 80%);
+}
+
 #author {
   margin-top: 20px;
   line-height: 1.3;
 }
+
 .avt {
-  width: 120px;
-  height: 120px;
+  width: 20vw;
+  height: 20vh;
   border-radius: 50%;
-  border: 1 solid #6b13ad;
+  border: 0.2rem solid gray;
   margin-top: 5px;
 }
 .avt:not(#av1) {
-  margin-left: -40px;
+  margin-left: -3rem;
 }
 #avata {
-  width: 70%;
-  border: 10px solid ghostwhite;
+  width: 60%;
+  border: 0.5rem solid ghostwhite;
   background-color: burlywood;
   margin-top: 30px;
   margin-bottom: 70px;
-  outline-offset: 20px;
-  outline: 10px solid royalblue;
+  outline-offset: 1.5rem;
+  outline: 1rem solid royalblue;
 }
 #av1:hover {
   color: tomato;
 }
 
+#git_command::before {
+  display: block;
+  content: "";
+  width: 70%;
+  height: 0.5rem;
+  background-color: yellow;
+  border-radius: 30%;
+}
+#git_command::after {
+  display: inline-block;
+  content: "";
+  width: 70%;
+  height: 0.5rem;
+  background-color: cornflowerblue;
+  border-radius: 40%;
+}
+
 #Git_Video {
-  line-height: 30px;
+  line-height: 2rem;
 }
 #git_command {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .link:hover {
@@ -162,8 +225,20 @@ h3 {
   border: 10px solid red;
   margin-top: 50px;
 } */
+#git_picture {
+  width: 70%;
+  margin: 2rem auto;
+}
+
 #git_command li {
   list-style-type: circle;
+}
+
+li::marker {
+  color: aliceblue;
+}
+li::selection {
+  color: crimson;
 }
 
 footer {
