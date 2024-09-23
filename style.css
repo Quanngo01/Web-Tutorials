@@ -20,6 +20,8 @@ h1 {
   text-decoration: underline;
   text-transform: uppercase;
   text-shadow: 15px -25px 10px rgb(128, 0, 0);
+
+  counter-reset: counter_h2;
 }
 #basic_tag {
   line-height: 1.5;
@@ -31,6 +33,15 @@ h2 {
   background-clip: text;
   /* -webkit-background-clip: text; */
   background-image: linear-gradient(to right, aqua, goldenrod 30%);
+
+  counter-increment: counter_h2;
+
+  position: sticky;
+  top: 0;
+}
+h2::after {
+  content: " (section " counter(counter_h2) ")";
+  color: aqua;
 }
 
 #opacity {
@@ -70,6 +81,8 @@ h2 {
 }
 
 #font {
+  display: inline-block;
+  margin: 0 10vw 0 0;
   font-size: 1.5rem;
   line-height: 1.5;
   font-family: fantasy;
@@ -77,10 +90,40 @@ h2 {
   text-align: justify;
   letter-spacing: 2px;
   word-spacing: 20px;
-  width: 60%;
-  height: 30rem;
+  width: 40vw;
+  height: 50vh;
   overflow: auto;
   overscroll-behavior: contain;
+}
+
+#test_position {
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 2rem dashed gray;
+  padding: 2rem;
+  background-color: #6c4f63;
+  width: 40%;
+  height: 50vh;
+
+  position: absolute;
+}
+#pos_1 {
+  width: 60%;
+  background-color: #28a2b7;
+  height: 60%;
+  position: absolute;
+}
+#pos_2 {
+  background-color: #44c489;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+}
+#pos_3 {
+  background-color: antiquewhite;
+  width: 20%;
+  height: 20%;
+  position: absolute;
 }
 
 #h2_2 {
@@ -101,12 +144,16 @@ h2 {
 }
 
 #testBox-sizing div {
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
   font-size: 1.5rem;
   color: aliceblue;
   background-color: #6b13ad;
   display: inline-block;
+
+  display: inline-block;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 #box1 {
   border: 0.5rem solid red;
