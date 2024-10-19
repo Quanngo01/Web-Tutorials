@@ -3,283 +3,475 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <link
+      rel="shortcut icon"
+      href="./src/icon/Horde_icon.webp"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Sen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./src/Avata/R(3).jpg" type="image/x-icon" />
+
     <title>STR-Testing</title>
   </head>
   <!-- cSpell: disable -->
   <body>
-    <h1>Header 1</h1>
-    <a class="link" href="" target="_blank">Reload in new tab</a>
-    <hr />
-    <a class="link" href="#git">Learn about Git</a>
+    <header class="header">
+      <h1>Header 1</h1>
+      <a class="link" href="" target="_blank">Reload in new tab</a>
+    </header>
 
-    <h2>Header 2</h2>
-    <div id="basic_tag">
-      <b>Lorem ipsum dolor sit amet.</b><br />
-      <i>Lorem ipsum dolor sit amet.</i><br />
-      <u>Lorem ipsum dolor sit amet.</u><br />
-      <pre>Lorem  ipsum dolor      sit amet.</pre>
-    </div>
-    <div>
-      <p id="opacity">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        <span
-          >Maiores architecto numquam nostrum nihil voluptatem consequuntur nam
-          facilis ab itaque ex ea animi, commodi eos repellat, ipsa dicta.</span
-        >
-        Maxime, quasi reiciendis?
-      </p>
-      <p id="visibility">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        <span
-          >Laudantium aspernatur, optio non ipsam cupiditate repellendus
-          unde.</span
-        >
-        Asperiores magni praesentium a, possimus in eligendi unde assumenda
-        atque molestiae, voluptatum blanditiis facere.
-      </p>
-      <p id="display">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias
-        sed, consectetur delectus soluta deserunt exercitationem, porro
-        molestiae eius rem consequuntur cumque esse aliquid repudiandae sequi
-        officia quia ducimus? Explicabo!
-      </p>
-    </div>
-    <p id="font">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, modi!
-      Nemo libero laborum aspernatur voluptatum quasi aut voluptatibus quibusdam
-      atque? Dolorum esse doloremque vel minus cum. Quas libero quidem aut?
-      Tempora vitae nobis quo consequuntur facere error explicabo voluptate
-      nihil adipisci, harum voluptas sit illo necessitatibus vero nisi ex quos
-      ea debitis dolores ab minima. Dolor rem eius beatae iure. Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Quod vero iste nihil cum ad,
-      qui, impedit assumenda quis animi facere unde quos distinctio possimus
-      iure facilis minus deleniti reiciendis a? Suscipit praesentium libero
-      iste, minima ipsam cupiditate at exercitationem tenetur consequatur error
-      quae, explicabo amet voluptatibus sit perferendis, delectus quaerat.
-      Debitis corporis, inventore quasi natus dolores laudantium delectus
-      commodi recusandae. Temporibus dolorum quos aspernatur nesciunt sit
-      tenetur deserunt hic architecto eos asperiores voluptatum ipsam, ab
-      obcaecati saepe cupiditate debitis. Asperiores ab culpa reiciendis
-      quisquam molestias numquam accusantium cum sunt velit. Soluta harum
-      suscipit, praesentium, sed facere, officiis reiciendis molestiae provident
-      quam iusto similique ipsam a? Quaerat cum, provident enim similique
-      aspernatur sequi itaque porro? Consequatur sint porro ex exercitationem
-      pariatur? Reiciendis quaerat ipsum laborum sit magnam inventore repellat,
-      aspernatur veniam totam error, id illo a rerum alias rem dolores quod
-      quidem quas quasi dignissimos ex perspiciatis maxime atque iure.
-      Inventore?
-    </p>
-    <div id="test_position">
-      Background
-      <div id="pos_1">Box 1</div>
-      <div id="pos_2">Box 2</div>
-      <div id="pos_3">Box 3</div>
-    </div>
-
-    <h2>Header 2</h2>
-    <div id="h2_2">
-      <img
-        loading="lazy"
-        src="./src/Screenshot-2024-09-15-230116.png"
-        alt="ERROR"
-        width="100%"
-      />
-      <img
-        loading="lazy"
-        src="./src/CSS_Border_Style.png"
-        alt="???"
-        width="100%"
-      />
-    </div>
-    <div>
-      <table id="table">
-        <thead>
-          <th>STT</th>
-          <th>Pseudo-classes</th>
-          <th>Ví dụ</th>
-          <th>Ý nghĩa</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>:hover</td>
-            <td>p:hover</td>
-            <td>thay đổi thuộc tính khi di chuột qua</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>:active</td>
-            <td>p:active</td>
-            <td>thay đổi thuộc tính khi nhấn giữ chuột</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>:link</td>
-            <td>a:link</td>
-            <td>thuộc tính khi chưa truy cập</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>:visited</td>
-            <td>a:visited</td>
-            <td>thuộc tính khi đã truy cập</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>:empty</td>
-            <td>div:empty</td>
-            <td>thay đổi thuộc tính khi không có nội dung</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>:target</td>
-            <td>#home:target</td>
-            <td>
-              thay đổi thuộc tính khi di chuyển qua hash tương ứng(id="home")
+    <main class="main">
+      <h2>Basic Elements</h2>
+      <div class="main__basic-elements">
+        <ul>
+          <li><b>b: Lorem ipsum dolor sit amet.</b></li>
+          <li><i>i: Lorem ipsum dolor sit amet.</i></li>
+          <li><u>u: Lorem ipsum dolor sit amet.</u></li>
+          <li><pre>pre: Lorem            ipsum dolor      sit amet.</pre></li>
+        </ul>
+        <p id="opacity">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <span
+            >Maiores architecto numquam nostrum nihil voluptatem consequuntur
+            nam facilis ab itaque ex ea animi, commodi eos repellat, ipsa
+            dicta.</span
+          >
+          Maxime, quasi reiciendis?
+        </p>
+        <p id="visibility">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <span
+            >Laudantium aspernatur, optio non ipsam cupiditate repellendus
+            unde.</span
+          >
+          Asperiores magni praesentium a, possimus in eligendi unde assumenda
+          atque molestiae, voluptatum blanditiis facere.
+        </p>
+        <p id="display">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias
+          sed, consectetur delectus soluta deserunt exercitationem, porro
+          molestiae eius rem consequuntur cumque esse aliquid repudiandae sequi
+          officia quia ducimus? Explicabo!
+        </p>
+        <p id="font">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          modi! Nemo libero laborum aspernatur voluptatum quasi aut voluptatibus
+          quibusdam atque? Dolorum esse doloremque vel minus cum. Quas libero
+          quidem aut? Tempora vitae nobis quo consequuntur facere error
+          explicabo voluptate nihil adipisci, harum voluptas sit illo
+          necessitatibus vero nisi ex quos ea debitis dolores ab minima. Dolor
+          rem eius beatae iure. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quod vero iste nihil cum ad, qui, impedit assumenda
+          quis animi facere unde quos distinctio possimus iure facilis minus
+          deleniti reiciendis a? Suscipit praesentium libero iste, minima ipsam
+          cupiditate at exercitationem tenetur consequatur error quae, explicabo
+          amet voluptatibus sit perferendis, delectus quaerat. Debitis corporis,
+          inventore quasi natus dolores laudantium delectus commodi recusandae.
+          Temporibus dolorum quos aspernatur nesciunt sit tenetur deserunt hic
+          architecto eos asperiores voluptatum ipsam, ab obcaecati saepe
+          cupiditate debitis. Asperiores ab culpa reiciendis quisquam molestias
+          numquam accusantium cum sunt velit. Soluta harum suscipit,
+          praesentium, sed facere, officiis reiciendis molestiae provident quam
+          iusto similique ipsam a? Quaerat cum, provident enim similique
+          aspernatur sequi itaque porro? Consequatur sint porro ex
+          exercitationem pariatur? Reiciendis quaerat ipsum laborum sit magnam
+          inventore repellat, aspernatur veniam totam error, id illo a rerum
+          alias rem dolores quod quidem quas quasi dignissimos ex perspiciatis
+          maxime atque iure. Inventore?
+        </p>
+        <div class="main__position">
+          <div id="testBox-sizing">
+            <div id="box1">(Content-Box) 15*15</div>
+            <div id="box2">(Border-Box) 15*15</div>
+          </div>
+          <div id="test_position">
+            Relative Box
+            <div id="pos_1">Absolute 1</div>
+            <div id="pos_2">Absolute 2</div>
+            <div id="pos_3">Absolute 3</div>
+          </div>
+        </div>
+        <div class="main__images">
+          <img
+            loading="lazy"
+            src="./src/Screenshot-2024-09-15-230116.png"
+            alt="ERROR"
+          />
+          <img loading="lazy" src="./src/CSS_Border_Style.png" alt="ERROR" />
+        </div>
+      </div>
+      <h2>Table</h2>
+      <div class="main__table">
+        <table id="table">
+          <thead>
+            <th>STT</th>
+            <th>Pseudo-classes</th>
+            <th>Ví dụ</th>
+            <th>Ý nghĩa</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>:hover</td>
+              <td>p:hover</td>
+              <td>thay đổi thuộc tính khi di chuột qua</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>:active</td>
+              <td>p:active</td>
+              <td>thay đổi thuộc tính khi nhấn giữ chuột</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>:link</td>
+              <td>a:link</td>
+              <td>thuộc tính khi chưa truy cập</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>:visited</td>
+              <td>a:visited</td>
+              <td>thuộc tính khi đã truy cập</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>:empty</td>
+              <td>div:empty</td>
+              <td>thay đổi thuộc tính khi không có nội dung</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>:target</td>
+              <td>#home:target</td>
+              <td>
+                thay đổi thuộc tính khi di chuyển qua hash tương ứng(id="home")
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td colspan="4">
+              ****************************** Example Table
+              ***************************
             </td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <td colspan="4">
-            ****************************** Example Table
-            ***************************
-          </td>
-        </tfoot>
-      </table>
-    </div>
-    <div id="testBox-sizing">
-      <div id="box1">Box 1 (Content Box) 30*30</div>
-      <div id="box2">Box 2 (Border Box) 30*30</div>
-    </div>
+          </tfoot>
+        </table>
+      </div>
 
-    <h2>Header 2</h2>
-    <div id="test_background"></div>
-    <hr />
-    <a class="link" href="#">return</a><br />
+      <h2>Background</h2>
+      <div class="main__background" id="test_background"></div>
+      <hr />
+      <a class="link" href="#">return</a><br />
 
-    <div id="author">
-      Author: Quan Ngo <br />Facebook:
-      <a
-        class="link"
-        href="https://www.facebook.com/quan.nhok.944/"
-        target="_blank"
-        >Quan Nhok</a
-      ><br />
-      <a class="link" href="tel:+49 178 2675022">Anrufen</a><br />
-      <a
-        class="link"
-        href="mailto:ngoquansz2001@gmail.com?cc=quannkox2001@gmail.com,quannkox11@gmail.com&subject=STR-Request"
-        >Email senden
-      </a>
-    </div>
-    <br />
-    <div id="avata">
-      <img
-        id="av1"
-        class="avt"
-        src="./src/Avata/kel_thuzad___warcraft_by_samrax-d82fd3e.jpg"
-        alt="???"
-      />
-      <img id="av2" class="avt" src="./src/Avata/R(4).jpg" alt="???" />
-      <img
-        id="av3"
-        class="avt"
-        src="./src/Avata/09b71e6d7c54511af13ec270ea1d1104.jpg"
-        alt="???"
-      />
-    </div>
+      <h2 id="git">Git Instruction</h2>
+      <div class="main__git">
+        <div id="Git_Video"></div>
+        <br />
+        <div id="git_picture">
+          <img
+            loading="lazy"
+            src="./src/gitflow.png"
+            alt="Gitflow"
+            width="100%"
+          />
+          <img
+            loading="lazy"
+            src="./src/Git_Instruction_Command.png"
+            alt="Git Command"
+            width="100%"
+          />
+        </div>
+        <div id="git_command">
+          <ul>
+            <li>"git branch -M ..." : change branch's name</li>
+            <li>"git branch ..." : creat new branch</li>
+            <li>"git branch -c ..." : copy a branch</li>
+            <li>"git branch -d||-D ..." : delete another local branch</li>
+            <li>"git push -d origin ..." : delete remote branch</li>
+            <li>"git switch ..." : switch branch</li>
+            <li>"git checkout ..." : switch branch/commit</li>
+            <li>"git checkout -b ..." : creat and switch branch</li>
+            <li>"git branch (-a||--all)" : show all branch</li>
+            <li>"git log --oneline" : show all commit (ID + message)</li>
+            <li>"git pull" : pull request</li>
+            <li>"git clone ..." : clone a repository</li>
+            <li>"git push -u origin ..." : push a new branch</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2 id="git">Git Instruction</h2>
-    <div id="Git_Video">
-      <a
-        class="link"
-        href="https://www.youtube.com/watch?v=5k1H7ZAnim0&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=22&t=32s"
-        target="_blank"
-        >Giới thiệu về Git và GitHub
-      </a>
-      <br />
-      <a
-        class="link"
-        href="https://www.youtube.com/watch?v=XPahXFmlL8Y&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=23"
-        target="_blank"
-        >Cài đặt Git và hướng dẫn Deploy Website</a
-      ><br />
-      <a
-        class="link"
-        href="https://www.youtube.com/watch?v=cpGTTZLXJWQ&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=24"
-        target="_blank"
-        >Deploy Website using VS Code</a
-      ><br />
-      <a
-        class="link"
-        href="https://www.youtube.com/watch?v=wOWh-PuT26g&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=25"
-        target="_blank"
-      >
-        Thành thạo Git với VS Code</a
-      ><br />
-      <a
-        class="link"
-        href="https://www.youtube.com/watch?v=AojrXhs0aVE&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=26"
-        target="_blank"
-        >Git Pull and Resolve Conflicts</a
-      ><br />
-      <a
-        class="link"
-        href="https://www.youtube.com/watch?v=JWHvsoxLPMU&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=27"
-        target="_blank"
-        >Git Branches Explained (Tạo, chuyển đổi và quản lý các nhánh)</a
-      ><br />
-      <a
-        class="link"
-        href="https://www.youtube.com/watch?v=jxs08abU4Nk&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=28"
-        target="_blank"
-        >Hướng dẫn sử dụng Git log</a
-      >
-    </div>
-    <br />
-    <div id="git_picture">
-      <img loading="lazy" src="./src/gitflow.png" alt="Gitflow" width="100%" />
-      <img
-        loading="lazy"
-        src="./src/Git_Instruction_Command.png"
-        alt="Git Command"
-        width="100%"
-      />
-    </div>
-    <div id="git_command">
-      <ul>
-        <li>"git branch -M ..." : change branch's name</li>
-        <li>"git branch -c ..." : creat branch</li>
-        <li>"git branch -d||-D ..." : delete another local branch</li>
-        <li>"git push -d origin ..." : delete remote branch</li>
-        <li>"git checkout ..." : switch branch/commit</li>
-        <li>"git checkout -b ..." : creat and switch branch</li>
-        <li>"git branch (-a||--all)" : show all branch</li>
-        <li>"git log --oneline" : show all commit (ID + message)</li>
-        <li>"git pull" : pull request</li>
-        <li>"git clone ..." : clone a repository</li>
-        <li>"git push -u||--set-upstream origin ..." : push a new branch</li>
-      </ul>
-    </div>
-    <h3>--------------------Javascript</h3>
-    <div id="js_image">
-      <img id="i1" loading="lazy" src="./src/String_js.png" alt="ERROR" />
-      <img id="i2" loading="lazy" src="./src/String_js1.png" alt="ERROR" />
-    </div>
-    <div id="clock_frame"><div id="clock"></div></div>
+      <h2>Flex box</h2>
+      <div id="test_flexBox">
+        <div id="block1">Block1</div>
+        <div id="block2">Block2</div>
+        <div id="block3">Block3</div>
+      </div>
+
+      <h2>Grid</h2>
+      <div class="grid">
+        <div class="block1">Block1</div>
+        <div class="block2">Block2</div>
+        <div class="block3">Block3</div>
+        <div class="block4">Block4</div>
+        <div class="block5">Block5</div>
+        <div class="block6">Block6</div>
+        <div class="block7">Block7</div>
+        <div class="block8">Block8</div>
+        <div class="block9">Block9</div>
+        <div class="block10">Block10</div>
+      </div>
+      <div class="grid2">
+        <div class="block1">Block1</div>
+        <div class="block2">Block2</div>
+        <div class="block3">Block3</div>
+        <div class="block4">Block4</div>
+        <div class="block5">Block5</div>
+      </div>
+
+      <h2>Media Query</h2>
+      <div class="media-query">
+        <div class="media-query__box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            possimus!
+          </p>
+        </div>
+        <p class="media-query__box2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+          doloremque atque aliquid iure quam impedit veniam cum, ipsum dolores
+          ipsam beatae blanditiis a qui eius inventore sapiente voluptatibus
+          maiores magnam.
+        </p>
+      </div>
+
+      <h2>Transitions</h2>
+      <div class="transition">
+        <section class="transition__content">
+          <button class="transition__btn">hover(2s)</button>
+          <div class="transition__transform">Transform Block</div>
+          <button class="transition__btn2">
+            <span class="transition__btn2--span">Hover</span>
+          </button>
+        </section>
+      </div>
+
+      <h2>Animation</h2>
+      <div class="animation">
+        <div class="animation__content">
+          <div class="animation__box1">Box 1</div>
+        </div>
+        <div class="animation__box2">Box 2</div>
+      </div>
+
+      <h2>Filter</h2>
+      <div class="main__filter">
+        <img src="./src/icon/Rouge_icon1.png" alt="" />
+        <div class="chat"></div>
+      </div>
+
+      <h2>Form</h2>
+      <div class="main__form">
+        <fieldset>
+          <legend>Form-header</legend>
+          <form action="">
+            <label for="username">Username: </label>
+            <input
+              type=""
+              tabindex="1"
+              id="username"
+              placeholder="Name"
+              name="username"
+              required
+            />
+            <br />
+
+            <label for="pass">Pasword: </label>
+            <input
+              type="text"
+              tabindex="3"
+              id="pass"
+              placeholder="Pass"
+              name="password"
+              required
+            />
+            <br />
+
+            <label>
+              Email:
+              <input type="email" tabindex="2" placeholder="@gmail.com" />
+            </label>
+            <br />
+            <input type="button" value="save" />
+          </form>
+          <form action="">
+            <p>Hobbys:</p>
+            <input type="checkbox" name="reisen" />Reisen
+            <input type="checkbox" name="essen" />Essen
+            <input type="checkbox" name="schlafen" />Schlafen
+            <input type="checkbox" name="lernen" />Lernen
+            <br />
+            <input type="reset" />
+          </form>
+
+          <p>Geschlecht:</p>
+          <form action="">
+            <input type="radio" name="Geschlecht" />M
+            <input type="radio" name="Geschlecht" />W
+
+            <p>Preis:</p>
+            <input type="range" min="0" max="200" step="50" value="100" />
+            <input type="number" min="20" max="100" step="10" value="25" />
+          </form>
+          <form action="https://www.bing.com/search">
+            <label>
+              <input type="text" name="q" />
+            </label>
+            <input type="submit" value="search" />
+          </form>
+          <form action="">
+            <label
+              >Message: <br /><textarea
+                name="message"
+                id=""
+                rows="10"
+                cols="30"
+                placeholder="add review"
+              ></textarea>
+              <br />
+              <label
+                >Level:
+                <select name="" id="" required>
+                  <option value="">select</option>
+                  <optgroup label="niedrig">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </optgroup>
+                  <optgroup label="hoch">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </optgroup>
+                </select>
+              </label>
+            </label>
+          </form>
+
+          <div class="toggle-switch">
+            <label
+              ><input id="focus" type="checkbox" hidden />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <h2>Javascript</h2>
+      <div class="main__js">
+        <div id="js_image">
+          <img id="i1" loading="lazy" src="./src/String_js.png" alt="ERROR" />
+          <img id="i2" loading="lazy" src="./src/String_js1.png" alt="ERROR" />
+        </div>
+
+        <div
+          id="clock_frame"
+          ondblclick="alert('First Alarm!');alert('Seconde Alarm')"
+          onmouseover="this.style.backgroundColor = 'green'"
+          onmouseleave="this.style.backgroundColor = 'gray'"
+        >
+          <div id="clock"></div>
+        </div>
+
+        <div class="myClass" id="myElement">
+          Class Methode
+          <button class="js__btn1">button 1</button>
+          <button class="js__btn2">button 2</button>
+          <button class="js__btn3">button 3</button>
+          <button class="js__btn4">random color</button>
+          <a href="" class="js-reload">Reload</a>
+        </div>
+      </div>
+    </main>
+
+    <a
+      href="https://www.youtube.com/playlist?list=PLPt6-BtUI22pYwpfmkP4EuJkf6GRe63KU"
+      class="link"
+    >
+      --> Full Course</a
+    >
 
     <!-- <div class="test1">
       <p id="test2">Test Margin collapse</p>
     </div> -->
     <footer>
-      ----------------------------- END ---------------------------
+      <div id="avata">
+        <img
+          id="av1"
+          class="avt"
+          src="./src/Avata/kel_thuzad___warcraft_by_samrax-d82fd3e.jpg"
+          alt="???"
+        />
+        <img id="av2" class="avt" src="./src/Avata/R(4).jpg" alt="???" />
+        <img
+          id="av3"
+          class="avt"
+          src="./src/Avata/09b71e6d7c54511af13ec270ea1d1104.jpg"
+          alt="???"
+        />
+      </div>
+
+      <div id="author">
+        Author: Quan Ngo <br />Facebook:
+        <a
+          class="link"
+          href="https://www.facebook.com/quan.nhok.944/"
+          target="_blank"
+          >Quan Nhok</a
+        ><br />
+        <a class="link" href="tel:+49 178 2675022">Anrufen</a><br />
+        <a
+          class="link"
+          href="mailto:ngoquansz2001@gmail.com?cc=quannkox2001@gmail.com,quannkox11@gmail.com&subject=STR-Request"
+          >Email senden
+        </a>
+      </div>
     </footer>
+
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // AOS.init({
+      //   // anchorPlacement: 'top-bottom',
+      //   offset: 200,
+      //   delay: 500,
+      //   duration: 1000,
+      // });
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
+      });
+    </script>
   </body>
 </html>
