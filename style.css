@@ -11,14 +11,12 @@ h1 {
 }
 .container {
   display: flex;
-  /* width: 100vw; */
   height: 90vh;
   flex-direction: column;
   min-width: 360px;
-  /* overflow: auto; */
 }
+
 .panel {
-  /* height: 100%; */
   background-size: cover;
   background-position: center;
   border-radius: 50px;
@@ -37,18 +35,83 @@ h3 {
   font-size: 24px;
   margin: 0;
   opacity: 0.3;
-  /* position: absolute; */
-  /* bottom: 0;
-  left: 50%; */
 }
-
 .panel.active {
   flex: 10;
 }
 .panel.active h3 {
   opacity: 1;
 }
-
-.slideImg {
+.project-2 {
   overflow: auto;
+}
+
+.project-3 {
+  text-align: center;
+}
+.progress-wrapper {
+  display: flex;
+  width: 450px;
+  max-width: 100%;
+  justify-content: space-between;
+  margin: 50px auto 30px;
+  position: relative;
+}
+.progress-wrapper::before {
+  content: "";
+  background-color: gray;
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.progress {
+  background-color: blue;
+  height: 4px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+.step {
+  background-color: aliceblue;
+  color: gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gray;
+  transition-delay: 0.4s;
+}
+.step.active {
+  color: blue;
+  border-color: currentColor;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  color: #fff;
+  background-color: blue;
+  padding: 8px 30px;
+  border-radius: 6px;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  transform: scale(1);
 }
