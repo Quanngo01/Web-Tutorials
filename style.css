@@ -168,3 +168,38 @@ input:focus {
 .search.active .fa-magnifying-glass {
   color: cadetblue;
 }
+
+.parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.btn-5 {
+  cursor: pointer;
+  background-color: purple;
+  border-radius: 10px;
+  border: 1px solid purple;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  translate: -50% -50%;
+  animation: myScale 0.5s forwards;
+}
+@keyframes myScale {
+  to {
+    scale: 5;
+    opacity: 0;
+  }
+}

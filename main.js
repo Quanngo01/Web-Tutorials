@@ -51,3 +51,29 @@ btn.addEventListener("click", () => {
   search.classList.toggle("active");
   input.focus();
 });
+
+const btn5 = document.querySelector(".btn-5");
+btn5.addEventListener("click", (e) => {
+  const rec = e.target.getBoundingClientRect(); // position of viewport
+  const x = e.clientX;
+  const y = e.clientY;
+
+  const x_ = x - rec.left;
+  const y_ = y - rec.top;
+
+  const circle = document.createElement("span");
+  circle.classList.add("circle");
+
+  circle.style.top = y_ + "px";
+  circle.style.left = x_ + "px";
+
+  btn5.appendChild(circle);
+
+  setTimeout(() => {
+    const c = document.querySelector(".btn-5 .circle");
+    if (c) {
+      c.remove();
+      console.log("deleted !");
+    }
+  }, 300);
+});
